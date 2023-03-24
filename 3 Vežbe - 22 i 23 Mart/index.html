@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> POČETNA STRANICA </h1>
+
+    <!-- Navigacioni meni -->
+    <!-- Najčešće se koriste kao liste radi jednostavnijeg stilizovanja -->
+
+    <ul>
+        <li> <a href="index.html"> Početna </a> </li>
+        <li> <a href="galerija.html"> Galerija </a> </li>
+        <li> <a href="kontakt.html"> Kontakt </a> </li>
+    </ul>
+
+
+    <!-- RAD SA TEKSTOM -->
+
+    <h1> Naslov 1 </h1>
+    <h2> Naslov 2 </h2>
+    <h3> Naslov 3 </h3>
+    <h4> Naslov 4 </h4>
+    <h5> Naslov 5 </h5>
+    <h6> Naslov 6 </h6>
+
+    <p> Ovo je neki paragraf </p>
+
+    <q> Ovo je nesto sto psie pod navodnicima </q>
+
+    <blockquote> Ovo je blockquote </blockquote>
+
+    <p> Ovo je <sup> superscript </sup> </p>
+    <p> Ovo je <sub> subscript </sub> </p>
+
+    <p> A <sup>2</sup> + B <sup>2</sup> = C <sup>2</sup> </p>
+
+    <abbr title="Visoka tehnicka skola u NS"> VTSNS </abbr>
+    
+    <!-- ODREĐENE LISTE - OrderedList -->
+
+    <ol reversed start="159">
+        <li>Kafa</li>
+        <li>Mleko</li>
+        <li>Sok
+            <ol> <!-- Lista u listi - složene lsite -->
+                <li>Crni
+                    <ol>
+                        <li>Coca Cola</li>
+                        <li>Pepsi Cola</li>
+                        <li>Cocta</li>
+                    </ol>
+                </li>
+                <li>Zuti</li>
+                <li>Zeleni</li>
+            </ol>
+
+        </li>
+    </ol>
+
+<!-- NEODREĐENE LISTE - UnorderedList -->
+    <ul>
+        <li> Voda </li>
+        <li> Cips </li>
+        <li> Cokolada 
+            <ul class="namirnice cokolade "> <!-- Klasa možemo imati više i odvajaju se razmakom -->
+                <li> Milka </li>
+                <li> Najlepse zelje </li>
+                <li id="galeb"> Galeb </li> <!-- ID koristimo za specifične elemente -->
+            </ul>
+        </li>
+    </ul>
+
+    <!-- TABELE -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th> Ime </th>
+                <th> Prezime </th>
+                <th> Index </th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td colspan="3"> Marko </td> <!-- Spajanje kolona -->
+                <!-- <td> Markovic </td> -->
+                <!-- <td> it1/1 </td> -->
+            </tr>
+
+            <tr>
+                <td> Jovana </td>
+                <td colspan="2"> Jovanovic </td>
+                <!-- <td> vd1/1 </td> -->
+            </tr>
+            
+            <tr>
+                <td> Janko </td>
+                <td> Jankovic </td>
+                <td rowspan="2"> it2/1 </td> <!-- Spajanje redova -->
+            </tr>
+
+            <tr>
+                <td> Ivana </td>
+                <td> Ivanovic </td>
+                <!-- <td> vd2/1 </td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SLIKEssssss -->
+
+    <img src="logo.png"> <!-- Slika se nalazi u istom folderu kao i index.htm --> <br>
+
+    <!-- Primeri: -->
+    <!-- <img src="Slike/logo.png"> Kada se slika nalazi u folderu Slike --> <br>
+    <!-- <img src="Slike/Skola/logo.png"> Kada se slika nalazi u folderu Skola koji je u folderu Slike --> <br>
+    
+    <!-- UNIVERZALNO PRAVILO ZA SVE PUTANJE: SRC, HREF: -->
+    <!-- Kada se vraćamo u prethodni folder koristimo ../imefoldera -->
+
+    <a href="https://vtsns.edu.rs/"> Klikni za sajt škole </a> <br>
+
+    <!-- Linkovanje slike -->
+    <a href="https://vtsns.edu.rs/">
+        <img src="logo.png">
+    </a>
+
+    <!-- FORMA -->
+
+    <form>
+
+    </form>
+
+</body>
+</html>
