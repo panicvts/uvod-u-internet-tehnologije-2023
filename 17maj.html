@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEGA IT</title>
+</head>
+<body>
+
+    <form>
+        <label>Ime</label> <br>
+        <input type="text" required> <br>
+
+        <label>Indeks:</label> <br>
+        <input type="text" required placeholder="IT1/1"> <br>
+
+        <label>E-mail:</label> <br>
+        <input type="email" required placeholder="markomarkovic@gmail.com"> <br> 
+
+        <!-- Required - obaveno polje -->
+        <!-- Placeholder - Sugestija -->
+    </form>
+
+
+    <br>
+    <label>Izaberi tehnologiju:</label> <br>
+    <input list="tehnologije" required> <!-- input mora imati list sa nekim imenom  -->
+    <datalist id="tehnologije"> <!-- To isto ime koristimo kao ID za datalist tag  -->
+        <option value="C#">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="PHP">
+        <option value="MySQL">
+        <option value="Javascript">
+    </datalist>
+
+    <br><br>
+
+    0 <input type="range" min="0" max="10" value="5"> 10  <!-- Default vrednost je polovina, sa value atributom definišemo željenu vrednost  -->
+
+    <br><br>
+
+    <input type="date" value="2023-05-10"> <!-- Default format datuma je: YYYY/MM/DD - Godina, mesec i dan. Mesec i dan moraju biti dve cifre!  -->
+    
+    <br><br>
+
+    <label>Lokacija rada:</label> <br>
+    <input type="radio" name="rad" checked> Kancelarija <br>
+    <input type="radio" name="rad"> Kuca
+
+    <!-- Radio inpute grupišemo putem name atributa -->
+    <!-- Checked - već unapred čekirano polje -->
+    
+</body>
+</html>
